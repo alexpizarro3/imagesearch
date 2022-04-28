@@ -9,7 +9,7 @@ class Resultado extends Component {
 
         if(imagenes.lenght === 0) console.log("Hola");
         
-        console.log(imagenes);
+        //console.log(imagenes);
 
         return (
             <React.Fragment>
@@ -21,12 +21,12 @@ class Resultado extends Component {
                         />
                     ) ) }
                 </div>
-                <Paginacion/>
+                <Paginacion
+                    paginaSiguiente={this.props.paginaSiguiente}
+                    paginaAnterior={this.props.paginaAnterior}
+                />
             </React.Fragment>
         )
-
-
-        
     }
 
     render() { 
